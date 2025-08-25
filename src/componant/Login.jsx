@@ -6,9 +6,9 @@ export default function Login() {
   const [form, setForm] = useState({ username: "", password: "" });
   const [msg, setMsg] = useState("");
 
-  // Hardcoded admin credentials (for simplicity)
-  const ADMIN_USERNAME = "admin";
-  const ADMIN_PASSWORD = "admin123";
+  // Use environment variables (Vite exposes with VITE_)
+  const ADMIN_USERNAME = import.meta.env.VITE_ADMIN_USERNAME;
+  const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD;
 
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -16,11 +16,11 @@ export default function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (form.username === ADMIN_USERNAME && form.password === ADMIN_PASSWORD) {
-      setMsg("✅ Login successful!");
+      setMsg("Login successful!");
       localStorage.setItem("isAdmin", "true"); // simple session
       navigate("/admin"); // redirect to admin dashboard
     } else {
-      setMsg("❌ Invalid credentials");
+      setMsg("Invalid credentials");
     }
   };
 
