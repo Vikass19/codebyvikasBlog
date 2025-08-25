@@ -63,7 +63,7 @@ codebyvikas-blog/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/your-username/codebyvikas-blog.git
+git clone https://github.com/Vikass19/codebyvikas-blog.git
 cd codebyvikas-blog
 ```
 
