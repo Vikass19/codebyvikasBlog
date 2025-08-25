@@ -87,7 +87,7 @@ const Home = () => {
 
       {/* Jobs Section */}
       <section className="max-w-7xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold mb-4">💼 Latest Job Posts</h2>
+        <h2 className="text-3xl font-bold mb-4"> Latest Job Posts</h2>
         <hr className="border-gray-300 mb-8" />
         {loading && <div className="text-gray-500">Loading jobs…</div>}
         {error && <div className="text-red-600">{error}</div>}
@@ -112,7 +112,7 @@ const Home = () => {
 
       {/* Tutorials Section */}
       <section className="max-w-7xl mx-auto px-6 py-16 bg-white rounded-3xl shadow-sm">
-        <h2 className="text-3xl font-bold mb-4">📘 Latest Coding Tutorials</h2>
+        <h2 className="text-3xl font-bold mb-4"> Latest Coding Tutorials</h2>
         <hr className="border-gray-300 mb-8" />
         {tutorialBlogs.length === 0 && !loading ? (
           <p className="text-gray-500 italic">No tutorials available yet.</p>
@@ -135,7 +135,7 @@ const Home = () => {
 
       {/* YouTube Section */}
       <section className="max-w-7xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold mb-4">▶️ Latest YouTube Videos</h2>
+        <h2 className="text-3xl font-bold mb-4"> Latest YouTube Videos</h2>
         <hr className="border-gray-300 mb-8" />
         <div className="grid md:grid-cols-3 gap-6">
           {youtubeVideos.map((vid) => (
@@ -156,7 +156,7 @@ const Home = () => {
         </div>
         <div className="mt-8 text-center">
           <a
-            href="https://www.youtube.com/@fixerror29"
+            href="https://www.youtube.com/@codebyvikas"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition-colors duration-300"
