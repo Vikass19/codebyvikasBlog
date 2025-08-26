@@ -70,7 +70,7 @@ const Home = () => {
     <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center relative">
       <div className="absolute -inset-4 bg-white/10 rounded-3xl blur-xl animate-pulse"></div>
       <img
-        src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?w=800&auto=format&fit=crop&q=80"
+        src="https://images.unsplash.com/photo-1536148935331-408321065b18?w=800&auto=format&fit=crop&q=80"
         alt="Coding illustration"
         className="relative w-full max-w-md rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
       />
