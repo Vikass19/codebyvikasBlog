@@ -23,42 +23,52 @@ const Home = () => {
       
 
 {/* Hero Section */}
-<section className="relative bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white overflow-hidden">
-  {/* Decorative background shapes */}
-  <div className="absolute -top-20 -left-20 w-72 h-72 bg-gray-700/30 rounded-full blur-3xl animate-pulse"></div>
+{/* Hero Section */}
+<section
+  className="relative text-white overflow-hidden bg-cover bg-center"
+  style={{
+    backgroundImage:
+      "url('https://plus.unsplash.com/premium_photo-1661600114108-3179188e1ab3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0')",
+  }}
+>
+  {/* Dark overlay for readability */}
+  <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/70 to-black/60"></div>
+
+  {/* Decorative blurred circles */}
+  <div className="absolute -top-20 -left-20 w-72 h-72 bg-gray-700/20 rounded-full blur-3xl animate-pulse"></div>
   <div className="absolute bottom-0 right-0 w-96 h-96 bg-gray-600/20 rounded-full blur-3xl animate-pulse delay-2000"></div>
 
   <div className="relative max-w-7xl mx-auto px-6 py-28 flex flex-col md:flex-row items-center justify-between">
     {/* Left Content */}
     <div className="md:w-1/2 space-y-8 animate-fadeIn">
       <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
-        <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r from-yellow-300 via-yellow-200 to-yellow-100 bg-clip-text text-transparent">
           Discover Jobs
         </span>
         <br />
-        <span className="bg-gradient-to-r from-gray-300 via-gray-100 to-white bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r from-gray-200 via-gray-100 to-white bg-clip-text text-transparent">
           & Tutorials
         </span>
       </h1>
-      <p className="text-lg md:text-xl text-gray-300 max-w-lg">
-        Stay ahead with the latest 
-        <span className="font-semibold text-white"> hiring updates </span> and 
-        <span className="font-semibold text-white"> coding tutorials </span> crafted for developers like you. 
+      <p className="text-lg md:text-xl text-gray-200 max-w-lg">
+        Stay ahead with the latest
+        <span className="font-semibold text-yellow-300"> hiring updates </span> and
+        <span className="font-semibold text-yellow-300"> coding tutorials </span> crafted for developers like you.
         Learn, grow, and land your dream IT job.
       </p>
-      
+
       {/* CTA Buttons */}
       <div className="flex space-x-4">
         <a
           href="/blogs"
-          className="flex items-center gap-2 px-6 py-3 bg-white text-black font-semibold rounded-full shadow-lg hover:shadow-2xl hover:bg-gray-200 transition-all duration-300"
+          className="flex items-center gap-2 px-6 py-3 bg-yellow-300 text-black font-semibold rounded-full shadow-lg hover:shadow-2xl hover:bg-yellow-200 transition-all duration-300"
         >
           <MdOutlineLibraryBooks size={22} />
           <span>Explore Blogs</span>
         </a>
         <a
           href="/contact"
-          className="flex items-center gap-2 px-6 py-3 border border-white text-white font-semibold rounded-full hover:bg-white hover:text-black transition-all duration-300"
+          className="flex items-center gap-2 px-6 py-3 border border-yellow-300 text-yellow-300 font-semibold rounded-full hover:bg-yellow-300 hover:text-black transition-all duration-300"
         >
           <MdOutlineMail size={22} />
           <span>Contact</span>
@@ -75,7 +85,7 @@ const Home = () => {
         className="relative w-full max-w-md rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
       />
       {/* Floating code snippet card */}
-      <div className="absolute -top-10 -right-6 bg-white/10 backdrop-blur-lg text-gray-200 px-4 py-3 rounded-2xl shadow-lg animate-bounce hidden md:block">
+      <div className="absolute -top-10 -right-6 bg-black/40 backdrop-blur-lg text-yellow-300 px-4 py-3 rounded-2xl shadow-lg animate-bounce hidden md:block">
         <code className="flex items-center gap-2 text-sm">
           <FiCode size={18} /> console.log("Hello Dev")
         </code>
@@ -83,6 +93,7 @@ const Home = () => {
     </div>
   </div>
 </section>
+
 
 
       {/* Jobs Section */}
